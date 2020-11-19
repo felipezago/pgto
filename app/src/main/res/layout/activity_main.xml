@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Empresa.CadEmp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:text="Cadastro de Empresas"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                />
+
+
+        </Toolbar>
+
+        <TextView
+            android:id="@+id/txRazaoSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:text="Razão Social"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:focusable="false"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/edtRazao"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txRazaoSocial"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:inputType="text"
+            android:hint="Informe a razão Social"
+            />
+
+        <TextView
+            android:id="@+id/txCNPJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtRazao"
+            android:text="CNPJ"
+            android:focusable="false"
+
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+
+            />
+
+        <EditText
+            android:id="@+id/edtCNPJ"
+            android:maxLength="14"
+            android:inputType="number"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txCNPJ"
+            android:layout_margin="15dp"
+            android:background="#ffffff"
+            android:hint="Digite o CNPJ" />
+
+        <TextView
+            android:id="@+id/txEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtCNPJ"
+            android:text="Endereço"
+            android:focusable="false"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+
+            />
+
+        <EditText
+            android:id="@+id/edtEnd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/txEndereco"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            android:background="#ffffff"
+            android:hint="Digite o Endereço" />
+
+        <TextView
+            android:id="@+id/txEm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtEnd"
+            android:text="Email (Login)"
+            android:textSize="20sp"
+            android:focusable="false"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+
+            />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txEm"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:inputType="text"
+            android:hint="Digite o Email" />
+
+        <TextView
+            android:id="@+id/txSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtEmail"
+            android:text="Senha"
+            android:textSize="20sp"
+            android:focusable="false"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+
+            />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txSenha"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:inputType="textPassword"
+            android:hint="Digite a Senha" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/edtSenha"
+            android:layout_margin="10dp"
+            android:text="Salvar"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

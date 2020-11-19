@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Empresa.EditaFunc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:text="Edição"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                />
+
+
+        </Toolbar>
+
+        <TextView
+            android:id="@+id/txNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:text="Nome: "
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/nome"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="95dp"
+            android:layout_toRightOf="@+id/txNome"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+            android:text="Nome"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/txCPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:layout_below="@id/nome"
+            android:text="CPF: "
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/cpf"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:maxLength="14"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:layout_toRightOf="@+id/txCPF"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/nome"
+            android:textSize="25sp"
+            android:text="cpf"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/txQtDep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:layout_below="@id/cpf"
+            android:text="Quantidade de Dependentes: "
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/dep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/txQtDep"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/cpf"
+            android:textSize="25sp"
+            android:text="0"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/txEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:layout_below="@id/dep"
+            android:text="Empresa:"
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/empresa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:layout_below="@id/txQtDep"
+            android:layout_marginLeft="-214dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/txQtDep"
+            android:text="nome"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txDataAdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:layout_below="@id/empresa"
+            android:text="Data Admissão:"
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/dataAdm"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:maxLength="10"
+            android:layout_below="@id/txEmpresa"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txDataAdm"
+            android:text="data"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txCargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:layout_below="@id/dataAdm"
+            android:text="Cargo: "
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/cargo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:layout_below="@id/txDataAdm"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txCargo"
+            android:text="cargo"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp" />
+
+        <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+        android:layout_below="@id/cargo"
+        android:text="Salvar"/>
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:background="#ff0000"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/btnSalvar"
+            android:text="Excluir Funcionário"/>
+
+    </RelativeLayout>
+
+</ScrollView>

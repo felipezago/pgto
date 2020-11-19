@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Empresa.LoginEmp">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+
+        >
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:text="Login"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:textColor="#fff"
+            />
+
+
+    </Toolbar>
+    <TextView
+        android:id="@+id/txCNPJ"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="CNPJ (números): "
+        android:maxLength="14"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:textSize="20sp"
+        />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone"
+            />
+"
+
+    <EditText
+        android:id="@+id/edtCNPJ"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txCNPJ"
+        android:maxLength="18"
+        android:background="#ffffff"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:gravity="center"
+        android:digits="0123456789"
+        android:hint="Digite o CNPJ Da Empresa"
+        />
+
+        <RelativeLayout
+            android:id="@+id/relAlt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/edtCNPJ"
+            android:layout_marginTop="150dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnAlterar"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginLeft="30dp"
+                android:background="#fff000"
+                android:visibility="visible"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Alterar CNPJ"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtCNPJ"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:maxLength="14"
+                android:layout_marginTop="40dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+
+                android:visibility="visible"
+
+                />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txEmail"
+                android:background="#ffffff"
+                android:textAlignment="center"
+
+                android:visibility="visible"
+                android:gravity="center"
+                android:hint="Digite o Email Do Login"
+                />
+
+            <TextView
+                android:id="@+id/txSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senha: "
+                android:maxLength="14"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:layout_below="@id/edtEmail"
+                />
+
+            <EditText
+                android:id="@+id/edtSenha"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txSenha"
+                android:background="#ffffff"
+                android:layout_marginLeft="50dp"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:visibility="visible"
+                android:gravity="center"
+                android:hint="Digite a Senha Da Empresa"
+                />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnEntrarEmp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/rel2"
+            android:layout_marginTop="50dp"
+            android:background="#fff000"
+            android:layout_marginLeft="50dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Entrar" />
+
+        <Button
+            android:id="@+id/btnNova"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/rel2"
+            android:layout_toRightOf="@id/btnEntrarEmp"
+            android:text="Criar Empresa"
+            android:background="#fff000"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/relMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnEntrarEmp"
+            android:layout_margin="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/msgERRO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ff0000"
+                android:textSize="20sp"
+                />
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+
+</ScrollView>

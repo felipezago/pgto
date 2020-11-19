@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Empresa.VisualizaEmpresa">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            >
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:text="Sua Empresa"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:textColor="#fff"
+                />
+
+
+        </Toolbar>
+
+        <TextView
+            android:id="@+id/txCNpj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="25sp"
+            android:text="CNPJ: "
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/cnpj"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="95dp"
+            android:layout_toRightOf="@+id/txCNpj"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+            android:text="CNPJ"
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/txEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/cnpj"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:text="Email: "
+            />
+
+            <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@+id/txEmail"
+            android:layout_below="@id/txCNpj"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+                android:background="@color/colorWhite"
+            android:textSize="25sp"
+            android:textColor="@color/colorBlack"
+            android:text="email"
+            />
+
+        <TextView
+            android:id="@+id/txrazao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/email"
+        android:layout_marginLeft="50dp"
+        android:textSize="25sp"
+        android:text="Razão Social: "
+            android:textColor="@color/colorBlack"
+        />
+
+        <EditText
+            android:id="@+id/razao"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/txrazao"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@color/colorWhite"
+            android:textSize="25sp"
+            android:text="Razão Social  "
+            android:textColor="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/txEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/razao"
+            android:textSize="25sp"
+            android:text="Endereço: "
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/end"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@id/txEndereco"
+            android:layout_below="@+id/txrazao"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+            android:text="Endereço "
+            android:textColor="@color/colorBlack"
+            />
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/end"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:text="Editar"/>
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="175dp"
+
+            android:layout_height="50dp"
+            android:layout_below="@id/btnEditar"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            android:text="Salvar"/>
+
+    </RelativeLayout>
+
+</ScrollView>
